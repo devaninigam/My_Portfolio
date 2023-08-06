@@ -1,0 +1,249 @@
+:root {
+  --font-color: #DDE6ED;
+  --btn-hover: #f438d2;
+  ---btn-hover: #377EF1;
+  --boder-color: linear-gradient(to right bottom, #f407ff, #cb00f8, #9f00f0, #6d00e6, #130bdc);
+
+}
+
+a,
+Link {
+  text-decoration: none;
+}
+
+.row {
+  flex-direction: row !important;
+}
+
+img {
+  max-width: 100% !important;
+  background-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.all_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========NevBar======= */
+div {
+  color: var(--font-color);
+}
+
+.colm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  border-radius: 0 0 40px 40px;
+  background-color: #61677A;
+  color: var(--font-color);
+  box-shadow: 7px 7px 10px 3px #000;
+}
+
+.MyImg {
+  height: 160px;
+  margin: 50px 0;
+  border-radius: 50%;
+}
+
+.Head_Dev {
+  margin: 12px 0;
+}
+
+.Head_P {
+  margin: 10px 0 20px 0;
+  font-weight: 600;
+}
+
+.Menu_Link {
+  color: var(--font-color);
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Icon_ma {
+  margin: 20px 0;
+}
+
+.Icon_So {
+  color: var(--font-color);
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ======Home======= */
+.all_center .De_Teg {
+  text-align: center;
+  margin: 10px 0 8px;
+  line-height: 34px;
+  color: #f1db37;
+}
+
+.De_Teg .Desing {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: var(---btn-hover);
+}
+
+.Hire_me_btn {
+  margin: 30px 0;
+  padding: 8px 25px;
+  background-color: transparent;
+  border: 2px solid var(---btn-hover);
+  border-radius: 17px;
+  color: var(--font-color);
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.Hire_me_btn:hover {
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0px -7px 12px var(---btn-hover), 0px 7px 12px var(---btn-hover);
+}
+
+/* =======About======= */
+@media (max-width: 924px) {
+  .About_text , .Content_text {
+    margin: 130px 0 0 10px !important;
+  }
+  
+}
+@media (max-width : 1200px) {
+  .center{
+    margin: 0 auto !important;
+  }
+  .Content_text h5{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 50px !important;
+  }
+  .Content_text h5{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 510px) {
+  .container {
+    padding: 0 30px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 20px !important;
+  }
+  .Content_text h5{
+    font-size: 15px;
+  }
+}
+
+.About_text , .Content_text {
+  margin: 130px 0 0 100px;
+}
+
+.intro p {
+  margin-left: 80px !important;
+}
+
+.btn_center {
+  margin-top: 35px;
+  margin-left: 20px;
+}
+
+/* =======Technology======== */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  transition: all 0.5s !important;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #5b51e7, #bf1abf);
+  border-image-slice: 1;
+}
+.cards img{
+  width: 150px !important;
+  height: 100px !important;
+}
+.cards:hover{
+  border: 2px solid var(---btn-hover);
+  box-shadow: 2px 5px 15px 3px #000 , -2px -5px 15px 3px #000;
+  transition: all 0.5s;
+}
+
+.cards h5{
+  margin: 10px 0;
+}
+.gradient-text {    
+  font-size: 36px;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.cards:hover h2{
+  background: linear-gradient(45deg, #e95dc6, #0724ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 36px;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+
+/* ======Project===== */
+.Project_card {
+  padding: 20px;
+  margin: 30px;
+  display: flex; 
+
+}
+.Project_card img{
+  width: 400px;
+}
+.Project_card  .pro_text{
+  margin: 20px;
+  padding: 8px;
+}
+.centerPro{
+  margin: 0 auto !important;
+}
+
+/* ========Content======= */
+.Content_text h5{
+  padding-left: 40px;
+}
+.Content_text .Contact_details {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 80px;
+}
+.Content_text .Contact_details span{
+      font-size: 18px;
+}
+.Content_text .Contact_details a{ 
+  margin: 4px 0 2px 50px;
+}
+.Content_text #more{
+  margin: 24px 0 0 !important;
+}
